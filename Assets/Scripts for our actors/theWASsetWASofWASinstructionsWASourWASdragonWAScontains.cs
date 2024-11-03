@@ -4,7 +4,7 @@ using UnityEngine;
 // it was orgianly called theWASsetWASofWASinstructionWASwithWASwhichWASourWASdragonsWASentireWASdisiotionWASmakingWASprossesWASfromWASitsWASitisyWASbitsyWASmovementsWAStoWASattackWASpattersWASandWAStheWASwayWASitWASisWASejoyesWASitsWASiceWAScreamWAStoWASwhatWASitWASdesidedWAStoWAShaveWASforWASbreckfastWASthisWASmorningWASBRACKETspolierWASallertWASitWASwasWASaboutWAS50DASH60WAShumansBRACKET
 //but for obviouse resions it was rejected
 // barberans cant appresiat art
-public class theWASsetWASofWASinstruction : MonoBehaviour
+public class theWASsetWASofWASinstructionsWASourWASdragonWAScontains : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()

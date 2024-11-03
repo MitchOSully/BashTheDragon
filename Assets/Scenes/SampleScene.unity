@@ -262,7 +262,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 383400225}
-  - component: {fileID: 383400224}
+  - component: {fileID: 383400226}
   m_Layer: 0
   m_Name: the DM essentualy
   m_TagString: Untagged
@@ -270,18 +270,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &383400224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 383400223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68eb99bb7bbcedf45b91d59c3fd2cd5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &383400225
 Transform:
   m_ObjectHideFlags: 0
@@ -297,6 +285,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &383400226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383400223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b26e88dfe147fe48b286b47c3010797, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_aMessages:
+  - go away
+  - nobody cares about you
+  - you're a failure
+  - you're just embarrassing yourself
+  - but that's why we keep trying
+  - jk no hope for you
+  m_messageGUI: {fileID: 1554053151}
 --- !u!1 &441470077
 GameObject:
   m_ObjectHideFlags: 0
@@ -538,7 +546,7 @@ Transform:
   m_GameObject: {fileID: 606917730}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.82, y: 10.44, z: -10.056037}
+  m_LocalPosition: {x: 10.82, y: 10.44, z: 9.67}
   m_LocalScale: {x: 5.1392155, y: 4.4402504, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -849,7 +857,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1
-  gameController: {fileID: 383400224}
+  gameController: {fileID: 383400226}
 --- !u!61 &1179006703
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1312,7 +1320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
-  gameController: {fileID: 383400224}
+  gameController: {fileID: 383400226}
 --- !u!1 &1554053149
 GameObject:
   m_ObjectHideFlags: 0
@@ -1370,8 +1378,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "go away\nno body cares about you\nyour a failer\nyour just enbarising
-    your self \nbut that why we keep trying\njk no hope for you"
+  m_text: '[text]'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1406,7 +1413,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0

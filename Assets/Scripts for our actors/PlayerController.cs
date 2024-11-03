@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
   public Rigidbody2D rb;
-  public float speed = 6f;
-  public float jumpPower = 5f;
+  public float speed = 15f;
+  public float jumpPower = 30f;
   public Transform groundCheck;
   public LayerMask groundLayer;
 
