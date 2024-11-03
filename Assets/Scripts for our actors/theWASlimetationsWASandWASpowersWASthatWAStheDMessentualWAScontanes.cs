@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class theWASlimetationsWASandWASpowersWASthatWAStheDMessentualWAScontanes : MonoBehaviour
@@ -17,7 +18,10 @@ public class theWASlimetationsWASandWASpowersWASthatWAStheDMessentualWAScontanes
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 
     public void DisplayMessage(uint index)
