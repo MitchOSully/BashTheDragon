@@ -479,6 +479,7 @@ GameObject:
   - component: {fileID: 606917733}
   - component: {fileID: 606917735}
   - component: {fileID: 606917736}
+  - component: {fileID: 606917737}
   m_Layer: 0
   m_Name: the drangon that will get bashed because after all its not 'that' hard
     additionaly his name is yharon
@@ -528,12 +529,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 49f750afd6594804a8782384bc6dcd7d, type: 3}
+  m_Sprite: {fileID: 1399108234, guid: 34e1e489270db8246a423de3cc3120a5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.5, y: 2.01}
+  m_Size: {x: 4.4, y: 3.5449219}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -549,7 +550,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10.43, y: 6.6, z: 9.67}
-  m_LocalScale: {x: 5.1392155, y: 4.4402504, z: 1}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -628,24 +629,77 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -1.2358799, y: 0.47394657}
+  - {x: -2.024515, y: -0.06463373}
   - {x: -1.1432588, y: 0.80938524}
   - {x: -0.5687259, y: 0.8598659}
   - {x: -0.3846024, y: 0.76641846}
-  - {x: -0.28234625, y: 0.86999834}
+  - {x: -0.23906699, y: 0.701692}
   - {x: 0.19156863, y: 0.5801759}
   - {x: 0.3316918, y: 0.36531532}
-  - {x: 0.81956124, y: 0.95492387}
-  - {x: 1.1058878, y: 0.91419935}
-  - {x: 1.3007308, y: 0.61084783}
-  - {x: 1.1002171, y: -0.8367086}
-  - {x: -0.96628046, y: -1.0222661}
-  - {x: -0.09054066, y: -0.20971785}
-  - {x: -1.2210422, y: 0.4330892}
+  - {x: 0.6801771, y: 0.24565303}
+  - {x: 0.6573885, y: 0.5416053}
+  - {x: 0.8421487, y: 0.76653945}
+  - {x: 0.7762827, y: 1.0655249}
+  - {x: 0.9183466, y: 1.2075335}
+  - {x: 1.570021, y: 1.1734718}
+  - {x: 2.1454816, y: 0.9125743}
+  - {x: 2.0759459, y: 0.4928788}
+  - {x: 1.7922745, y: 0.15724537}
+  - {x: 2.0798016, y: 0.050307557}
+  - {x: 1.9190596, y: -0.3725894}
+  - {x: 1.4392812, y: -0.22050123}
+  - {x: 1.1707983, y: -0.6406606}
+  - {x: 1.6067812, y: -0.8500162}
+  - {x: 1.8813074, y: -1.2262753}
+  - {x: 1.751599, y: -1.5657958}
+  - {x: 1.4994822, y: -1.5617318}
+  - {x: 1.4667025, y: -1.3492178}
+  - {x: 1.268523, y: -1.3031576}
+  - {x: 1.3539178, y: -1.492024}
+  - {x: 1.0484958, y: -1.4984992}
+  - {x: 0.6017488, y: -1.6457188}
+  - {x: 0.45404488, y: -1.3310193}
+  - {x: 0.2547857, y: -1.5771208}
+  - {x: 0.051105276, y: -1.303306}
+  - {x: -0.017669141, y: -1.61199}
+  - {x: -0.3730032, y: -1.3979129}
+  - {x: -0.60166574, y: -1.4211017}
+  - {x: -0.924396, y: -1.7033538}
+  - {x: -1.564692, y: -1.6895759}
+  - {x: -1.3690184, y: -1.2278872}
+  - {x: -0.8874373, y: -0.8477517}
+  - {x: -1.0672643, y: -0.75778484}
+  - {x: -1.6630026, y: -1.0801022}
+  - {x: -1.8409258, y: -0.92622197}
+  - {x: -1.8168823, y: -0.7579156}
+  - {x: -1.8231118, y: -0.5175297}
+  - {x: -2.0964208, y: -0.41086915}
+  - {x: -2.0433385, y: -0.06702085}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!95 &606917737
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606917730}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: efb52e97bc34a4a449116b1baf85e276, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &718058713
 GameObject:
   m_ObjectHideFlags: 0
