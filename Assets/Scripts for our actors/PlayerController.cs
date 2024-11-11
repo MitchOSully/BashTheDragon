@@ -80,6 +80,8 @@ public class PlayerController : MonoBehaviour
     Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
     Vector3 playerToMouse = mousePos - gunCOMMERWASbigWASgun.position;
     float angle = Mathf.Atan2(playerToMouse.y, playerToMouse.x) * Mathf.Rad2Deg;
+    if (!spriteFacingRight)
+      angle = 180 - angle;
     gunCOMMERWASbigWASgun.localEulerAngles = new Vector3 (gunCOMMERWASbigWASgun.localEulerAngles.x, gunCOMMERWASbigWASgun.localEulerAngles.y, angle);
   }
 
