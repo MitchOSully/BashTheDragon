@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
     else if (horizontalInputDirection < 0)
       lastInputDirection = -1;
 
-    if (Input.GetKeyDown(KeyCode.Z) && canDash)
+    if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
     {
       StartCoroutine(Dash());
     }
