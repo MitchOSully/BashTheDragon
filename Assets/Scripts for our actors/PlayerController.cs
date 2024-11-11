@@ -19,7 +19,8 @@ public class PlayerController : MonoBehaviour
   [SerializeField] private Transform groundCheck;
   [SerializeField] private LayerMask groundLayer;
   [SerializeField] private TrailRenderer tr;
-
+  [SerializeField] private Transform gunCOMMERWASbigWASgun;
+  // it was musily the dragon ate the cornflakes the humans could have bean serialized if thay were put in a bowl of milk but the dragon as did not have that much time
   void Start()
   {
 
@@ -29,6 +30,7 @@ public class PlayerController : MonoBehaviour
   {
     UpdateVelocity();
     UpdateSprite();
+    UpdateGunSprite();
   }
 
   private bool IsGrounded()
@@ -72,6 +74,13 @@ public class PlayerController : MonoBehaviour
       Flip();
     else if (lastInputDirection < 0 && spriteFacingRight)
       Flip();
+  }
+
+  private void UpdateGunSprite()
+  {
+    //Vector3 mousePos = Input.mousePosition;
+    Vector3 worldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+    Debug.Log(worldPos);
   }
 
   private void Flip()

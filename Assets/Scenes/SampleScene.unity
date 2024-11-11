@@ -477,6 +477,8 @@ GameObject:
   - component: {fileID: 606917732}
   - component: {fileID: 606917731}
   - component: {fileID: 606917733}
+  - component: {fileID: 606917735}
+  - component: {fileID: 606917736}
   m_Layer: 0
   m_Name: the drangon that will get bashed because after all its not 'that' hard
     additionaly his name is yharon
@@ -546,7 +548,7 @@ Transform:
   m_GameObject: {fileID: 606917730}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.82, y: 10.44, z: 9.67}
+  m_LocalPosition: {x: 10.43, y: 6.6, z: 9.67}
   m_LocalScale: {x: 5.1392155, y: 4.4402504, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -564,6 +566,86 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b984baedf3856a40b6a18912e0e79c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!50 &606917735
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606917730}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!68 &606917736
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606917730}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.2358799, y: 0.47394657}
+  - {x: -1.1432588, y: 0.80938524}
+  - {x: -0.5687259, y: 0.8598659}
+  - {x: -0.3846024, y: 0.76641846}
+  - {x: -0.28234625, y: 0.86999834}
+  - {x: 0.19156863, y: 0.5801759}
+  - {x: 0.3316918, y: 0.36531532}
+  - {x: 0.81956124, y: 0.95492387}
+  - {x: 1.1058878, y: 0.91419935}
+  - {x: 1.3007308, y: 0.61084783}
+  - {x: 1.1002171, y: -0.8367086}
+  - {x: -0.96628046, y: -1.0222661}
+  - {x: -0.09054066, y: -0.20971785}
+  - {x: -1.2210422, y: 0.4330892}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &718058713
 GameObject:
   m_ObjectHideFlags: 0
@@ -689,12 +771,100 @@ Transform:
   m_GameObject: {fileID: 718058713}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.74, y: 3.41, z: 0}
+  m_LocalPosition: {x: 10.36, y: 1.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1008719525
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1008719526}
+  - component: {fileID: 1008719527}
+  m_Layer: 0
+  m_Name: the gun that is pefectly designd to distroy dragon hide and to figure out
+    its every weakness and is opitmised to the point in whcih it can only distroy
+    the dragon but not and ice cream unless it is mint flavour because dragons and
+    mint have many similarities such as um well you know im just going to stop talking
+    now
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1008719526
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008719525}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.6, y: -0.03, z: 20}
+  m_LocalScale: {x: 7.6879272, y: 8.592326, z: 13.433434}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1477972955}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1008719527
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008719525}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 1339162928, guid: 710d8bef9725fe14d8216e6ab59d4344, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.12, y: 0.44}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1072503479
 GameObject:
   m_ObjectHideFlags: 0
@@ -820,7 +990,7 @@ Transform:
   m_GameObject: {fileID: 1072503479}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.35, y: -1.83, z: 0}
+  m_LocalPosition: {x: -11.27, y: -1.94, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1043,7 +1213,7 @@ Transform:
   m_GameObject: {fileID: 1476901741}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.96, y: 2.06, z: 0}
+  m_LocalPosition: {x: -20.11, y: 3.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1158,11 +1328,12 @@ Transform:
   m_GameObject: {fileID: 1477972951}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.03, y: 1.12, z: 0}
+  m_LocalPosition: {x: -8.78, y: -0.07, z: 0}
   m_LocalScale: {x: 0.44364402, y: 0.44364402, z: 0.44364402}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1886024512}
+  - {fileID: 1008719526}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1477972957
@@ -1224,7 +1395,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 15
   jumpPower: 30
-  horizontalInputDirection: 1
+  lastInputDirection: 1
   spriteFacingRight: 1
   canDash: 1
   isDashing: 0
