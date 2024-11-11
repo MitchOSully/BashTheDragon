@@ -20,11 +20,10 @@ public class PlayerController : MonoBehaviour
   [SerializeField] private LayerMask groundLayer;
   [SerializeField] private TrailRenderer tr;
   [SerializeField] private Transform gunCOMMERWASbigWASgun;
-  // it was musily the dragon ate the cornflakes the humans could have bean serialized if thay were put in a bowl of milk but the dragon as did not have that much time
-  void Start()
-  {
+  // it was museli the dragon ate the cornflakes the humans could have bean serialized if thay were put in a bowl of milk but the dragon did not have that much time
 
-  }
+  void Start()
+  {}
 
   void Update()
   {
@@ -78,9 +77,10 @@ public class PlayerController : MonoBehaviour
 
   private void UpdateGunSprite()
   {
-    //Vector3 mousePos = Input.mousePosition;
-    Vector3 worldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-    Debug.Log(worldPos);
+    Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+    Vector3 playerToMouse = mousePos - gunCOMMERWASbigWASgun.position;
+    float angle = Mathf.Atan2(playerToMouse.y, playerToMouse.x) * Mathf.Rad2Deg;
+    gunCOMMERWASbigWASgun.localEulerAngles = new Vector3 (gunCOMMERWASbigWASgun.localEulerAngles.x, gunCOMMERWASbigWASgun.localEulerAngles.y, angle);
   }
 
   private void Flip()
