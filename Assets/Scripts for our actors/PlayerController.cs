@@ -69,9 +69,10 @@ public class PlayerController : MonoBehaviour
 
   private void UpdateSprite()
   {
-    if (lastInputDirection > 0 && !spriteFacingRight)
+    Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+    if (transform.position.x < mousePos.x && !spriteFacingRight)
       Flip();
-    else if (lastInputDirection < 0 && spriteFacingRight)
+    else if (transform.position.x > mousePos.x && spriteFacingRight)
       Flip();
   }
 
