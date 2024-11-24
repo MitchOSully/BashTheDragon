@@ -6,15 +6,16 @@ using UnityEngine;
 // barberans cant appresiat art
 public class theWASsetWASofWASinstructionsWASourWASdragonWAScontains : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private AudioManager audioManager;
+    private int count = 0;
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.CompareTag("bullet"))
+        {
+            count++;
+            Debug.Log("Yarron hurt " + count);
+            audioManager.PlaySFX(audioManager.m_yarronHurtClip);
+        }
     }
 }
