@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+  public bool spriteFacingRight = true;
+
   [SerializeField] private float speed = 15f;
   [SerializeField] private float jumpPower = 30f;
   [SerializeField] private int lastInputDirection = 1; //+1 means right, -1 means left
-  [SerializeField] private bool spriteFacingRight = true;
   // Dashing variables:
   [SerializeField] private bool canDash = true;
   [SerializeField] private bool isDashing = false;

@@ -304,6 +304,8 @@ MonoBehaviour:
   - you're just embarrassing yourself
   - but that's why we keep trying
   - jk no hope for you
+  - Yeahhhh, bash dat dragon
+  - Some friends enjoy your company while others endure it
   m_messageGUI: {fileID: 1554053151}
 --- !u!1 &441470077
 GameObject:
@@ -840,6 +842,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1008719526}
+  - component: {fileID: 1008719527}
   m_Layer: 0
   m_Name: the gun that is pefectly designd to distroy dragon hide and to figure out
     its every weakness and is opitmised to the point in whcih it can only distroy
@@ -867,6 +870,22 @@ Transform:
   - {fileID: 1597188182}
   m_Father: {fileID: 1477972955}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1008719527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008719525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 844ac853b0837ce40a80f8accc945a55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 3845859187606154124, guid: 20b9089dc4a327b44a369ab26fc7afee, type: 3}
+  bulletSpeed: 300
+  playerController: {fileID: 1477972958}
+  bulletsPerSecond: 15
 --- !u!1 &1072503479
 GameObject:
   m_ObjectHideFlags: 0
@@ -1028,7 +1047,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 495b8f75b057a6c499235f5bf562c290, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 1
+  index: 6
   gameController: {fileID: 383400226}
 --- !u!61 &1179006703
 BoxCollider2D:
@@ -1395,10 +1414,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b74bed212c6f6fa4d8497119457dcb2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteFacingRight: 1
   speed: 15
   jumpPower: 30
   lastInputDirection: 1
-  spriteFacingRight: 1
   canDash: 1
   isDashing: 0
   dashingPower: 30
@@ -1615,7 +1634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 495b8f75b057a6c499235f5bf562c290, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 0
+  index: 7
   gameController: {fileID: 383400226}
 --- !u!1 &1554053149
 GameObject:
@@ -1651,7 +1670,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0.1499939}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1554053151
