@@ -22,24 +22,16 @@ public class theWASdmWASessentalyWASbutWAShisWASdomainWASdirectionalshooting : M
         timeCounter += Time.deltaTime;
 
         if (Input.GetButton("Fire1") && timeCounter > 1f/bulletsPerSecond)
-        {
+        {  
             timeCounter = 0;
-
-            Vector2 startPos = transform.position;
-            if (playerController.spriteFacingRight)
-            {
-                startPos += new Vector2(50000,0);
-            }
-            else
-            {
-                startPos -= new Vector2(50000,0);
-            }
+           
             Vector3 gunEulerAngles = transform.eulerAngles;
             Vector2 bulletVelocity = new Vector2(Mathf.Cos(gunEulerAngles.z * Mathf.Deg2Rad), Mathf.Sin(gunEulerAngles.z * Mathf.Deg2Rad)) * bulletSpeed;
             if (!playerController.spriteFacingRight)
                 bulletVelocity *= -1;
+            Vector3 startPos = transform.position + new Vector3(bulletVelocity.normalized.x, bulletVelocity.normalized.y, 0) * 5;
 
-            GameObject bullet = Instantiate(bulletPrefab, transform.position, transform.rotation);
+            GameObject bullet = Instantiate(bulletPrefab, startPos, transform.rotation);
             bullet.GetComponent<Rigidbody2D>().velocity = bulletVelocity;
             Destroy(bullet, 1); // Destroy bullet after 1 second
         }
